@@ -10,7 +10,7 @@
                 </div>
 
                 <p class="lead">
-                  {{ .Site.Params.sponsors.tier1 }}
+                    {{ .Site.Params.sponsors.tier1 }}
                 </p>
 
                 <ul class="owl-carousel customers">
@@ -26,7 +26,7 @@
                     </li>
                     {{ end }}
                 </ul>
-                <!-- /.owl-carousel -->
+                <!-- /.owl-carousel1 -->
 
                 <p class="lead">
                     {{ .Site.Params.sponsors.tier2 }}
@@ -37,14 +37,15 @@
                     <li class="item" title="{{ .name }}">
                         {{ if .url }}
                           <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
                           </a>
                         {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
                         {{ end }}
                     </li>
                     {{ end }}
                 </ul>
+                <!-- /.owl-carouse2 -->
 
                 <p class="lead">
                     {{ .Site.Params.sponsors.tier3 }}
@@ -55,14 +56,15 @@
                     <li class="item" title="{{ .name }}">
                         {{ if .url }}
                           <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%"/>
                           </a>
                         {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%"/>
                         {{ end }}
                     </li>
                     {{ end }}
                 </ul>
+                <!-- /.owl-carousel3 -->
 
             </div>
         </div>
