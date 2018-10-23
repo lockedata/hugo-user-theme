@@ -14,7 +14,7 @@
                 </p>
 
                 <ul class="owl-carousel customers">
-                    {{ range .Site.Data.sponsors }}
+                    {{ range .Site.Data.sponsors.tier1 }}
                     <li class="item" title="{{ .name }}">
                         {{ if .url }}
                           <a href="{{ .url }}" target="_blank">
@@ -32,9 +32,37 @@
                     {{ .Site.Params.sponsors.tier2 }}
                 </p>
                 
+                <ul class="owl-carousel customers">
+                    {{ range .Site.Data.sponsors.tier2 }}
+                    <li class="item" title="{{ .name }}">
+                        {{ if .url }}
+                          <a href="{{ .url }}" target="_blank">
+                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                          </a>
+                        {{ else }}
+                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ul>
+
                 <p class="lead">
                     {{ .Site.Params.sponsors.tier3 }}
                 </p>
+
+                <ul class="owl-carousel customers">
+                    {{ range .Site.Data.sponsors.tier3 }}
+                    <li class="item" title="{{ .name }}">
+                        {{ if .url }}
+                          <a href="{{ .url }}" target="_blank">
+                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                          </a>
+                        {{ else }}
+                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ul>
 
             </div>
         </div>
