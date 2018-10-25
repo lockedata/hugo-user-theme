@@ -1,18 +1,30 @@
 <div class="container" id="register">
-    <div class="row">
-        <div class="col-md-12">
-            <section>
-                <p class="text-center">
-                    <a href="{{ .Site.Params.participation.registration_link }}" class="btn btn-template-main">{{ .Site.Params.participation.registration_text }}</a>
-                </p>
 
-                <p class="text-center">
-                    this is in a parital
-                </p>
-                
-                {{ .Content }}
-
-            </section>
+    {{ if .Site.Params.participation.tickets_enable }}
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <p class="text-center">
+                        <a href="{{ .Site.Params.participation.tickets_link }}" class="btn btn-template-main">{{ .Site.Params.participation.tickets_text }}</a>
+                    </p>
+                </section>
+            </div>
         </div>
-    </div>
+        <!-- /.tickets -->
+    {{ end }}
+
+    {{ if .Site.Params.participation.cfp_enable }}
+        <div class="row">
+            <div class="col-md-12">
+                <section>
+                    <p class="text-center">
+                        <a href="{{ .Site.Params.participation.cfp_link }}" class="btn btn-template-main">{{ .Site.Params.participation.cfp_text }}</a>
+                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- /.call for papers -->
+    {{ end }}
+
+    {{ .Content }}
 </div>
