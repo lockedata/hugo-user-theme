@@ -21,9 +21,21 @@
 
 		{{ partial "testimonials.html" . }}
 
-		{{ partial "twitter.html" . }}
+		{{ if .Site.Params.twitter.enable }}
+			{{ partial "twitter.html" . }}
+		{{ end}}
 
-		{{ partial "organising.html" . }}
+		{{ if .Site.Params.organising.enable }}
+			{{ partial "organising.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.programming.enable }}
+			{{ partial "programming.html" . }}
+		{{ end }}
+
+		{{ if .Site.Params.foundation.enable }}
+			{{ partial "foundation.html" . }}
+		{{ end }}
 
 		{{ partial "see_more.html" . }}
 
