@@ -2,73 +2,73 @@
 {{ if .Site.Params.sponsors.enable }}
 {{ if gt (len .Site.Data.sponsors) 0 }}
 <section class="bar background-gray no-mb">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading text-center">
-                    <h2>{{ .Site.Params.sponsors.title }}</h2>
-                </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading text-center">
+					<h2>{{ .Site.Params.sponsors.title }}</h2>
+				</div>
 
-                <p class="lead">
-                    {{ .Site.Params.sponsors.tier1 }}
-                </p>
+				<p class="lead">
+					{{ .Site.Params.sponsors.tier1 }}
+				</p>
 
-                <ul class="owl-carousel customers">
-                    {{ range .Site.Data.sponsors.tier1 }}
-                    <li class="item" title="{{ .name }}">
-                        {{ if .url }}
-                          <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                          </a>
-                        {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
-                <!-- /.owl-carousel1 -->
+				<ul class="owl-carousel customers">
+					{{ range .Site.Data.sponsors.tier1 }}
+					<li class="item" title="{{ .name }}">
+						{{ if .url }}
+						<a href="{{ .url }}" target="_blank">
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+						</a>
+						{{ else }}
+						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+						{{ end }}
+					</li>
+					{{ end }}
+				</ul>
+				<!-- /.owl-carousel1 -->
 
-                <p class="lead">
-                    {{ .Site.Params.sponsors.tier2 }}
-                </p>
-                
-                <ul class="owl-carousel customers">
-                    {{ range .Site.Data.sponsors.tier2 }}
-                    <li class="item" title="{{ .name }}">
-                        {{ if .url }}
-                          <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
-                          </a>
-                        {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
-                <!-- /.owl-carousel2 -->
+				<p class="lead">
+					{{ .Site.Params.sponsors.tier2 }}
+				</p>
 
-                <p class="lead">
-                    {{ .Site.Params.sponsors.tier3 }}
-                </p>
+				<ul class="owl-carousel customers">
+					{{ range .Site.Data.sponsors.tier2 }}
+					<li class="item" title="{{ .name }}">
+						{{ if .url }}
+						<a href="{{ .url }}" target="_blank">
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
+						</a>
+						{{ else }}
+						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
+						{{ end }}
+					</li>
+					{{ end }}
+				</ul>
+				<!-- /.owl-carousel2 -->
 
-                <ul class="owl-carousel customers">
-                    {{ range .Site.Data.sponsors.tier3 }}
-                    <li class="item" title="{{ .name }}">
-                        {{ if .url }}
-                          <a href="{{ .url }}" target="_blank">
-                            <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%"/>
-                          </a>
-                        {{ else }}
-                          <img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%"/>
-                        {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
-                <!-- /.owl-carousel3 -->
+				<p class="lead">
+					{{ .Site.Params.sponsors.tier3 }}
+				</p>
 
-            </div>
-        </div>
-    </div>
+				<ul class="owl-carousel customers">
+					{{ range .Site.Data.sponsors.tier3 }}
+					<li class="item" title="{{ .name }}">
+						{{ if .url }}
+						<a href="{{ .url }}" target="_blank">
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
+						</a>
+						{{ else }}
+						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
+						{{ end }}
+					</li>
+					{{ end }}
+				</ul>
+				<!-- /.owl-carousel3 -->
+
+			</div>
+		</div>
+	</div>
 </section>
 {{ end }}
 {{ end }}
