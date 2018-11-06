@@ -7,10 +7,23 @@
 				<h3 class="section-subheading text-mutedwith ">{{ with .Site.Params.dates.subtitle }}{{ . | markdownify }}{{ end }}</h3>
 			</div>
         </div>
-            <ul>
-                {{ range .Site.Data.dates.dates }}
-                    <li>{{ . }}</li>
+        <table class="table table-hover">
+            <thead>
+                <th>Date</th>
+                <th>Event</th>
+            </thead>
+            <tbody>
+                {{ $url := "/csv/dates.csv" }}
+                {{ $sep := "," }}
+                {{ range $i, $r := getCSV $sep $url }}
+        
+                <tr>
+                    <td>{{ index $r 0 }}</td>
+                    <td>{{ index $r 1 }}</td>
+                </tr>
+        
                 {{ end }}
-            </ul>
-        </div>
+            </tbody>
+        </table>
+    </div>
 </section>
