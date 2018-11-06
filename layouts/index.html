@@ -15,11 +15,17 @@
 
 		</header>
 
-		{{ partial "carousel.html" . }}
+		{{ if .Site.Params.carousel.enable }}
+			{{ partial "carousel.html" . }}
+		{{ end }}
+		
+		{{ if .Site.Params.features.enable }}
+			{{ partial "features.html" . }}
+		{{ end }}
 
-		{{ partial "features.html" . }}
-
-		{{ partial "testimonials.html" . }}
+		{{ if .Site.Params.testimonials.enable }}
+			{{ partial "testimonials.html" . }}
+		{{ end }}
 
 		{{ if .Site.Params.twitter.enable }}
 			{{ partial "twitter.html" . }}
@@ -37,11 +43,17 @@
 			{{ partial "foundation.html" . }}
 		{{ end }}
 
-		{{ partial "see_more.html" . }}
+		{{ if .Site.Params.see_more.enable }}
+			{{ partial "see_more.html" . }}
+		{{ end }}
 
-		{{ partial "recent_posts.html" . }}
+		{{ if .Site.Params.recent_posts.enable }}
+			{{ partial "recent_posts.html" . }}
+		{{ end }}
 
-		{{ partial "sponsors.html" . }}
+		{{ if .Site.Params.sponsors.enable }}
+			{{ partial "sponsors.html" . }}
+		{{ end }}
 
 		{{ partial "footer.html" . }}
 
