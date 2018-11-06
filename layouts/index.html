@@ -23,6 +23,10 @@
 			{{ partial "features.html" . }}
 		{{ end }}
 
+		{{ if .Site.Params.dates.enable }}
+			{{ partial "dates.html" . }}
+		{{ end }}
+
 		{{ if .Site.Params.testimonials.enable }}
 			{{ partial "testimonials.html" . }}
 		{{ end }}
