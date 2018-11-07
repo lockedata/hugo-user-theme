@@ -5,12 +5,16 @@
 	<div class="container">
 		<div class="row">
             <div class="col-md-12">
-                <div class="heading text-center">
-                    <h2>{{ .Site.Params.foundation.title }}</h2>
-                </div>
-                <div class="heading text-center">
-                    <h3>{{ .Site.Params.foundation.subtitle }}</h3>
-                </div>
+				{{ if isset .Site.Params.foundation "title" }}
+				<div class="heading text-center">
+					<h2>{{ .Site.Params.foundation.title }}</h2>
+				</div>
+				{{ end }}
+				{{ if isset .Site.Params.foundation "subtitle" }}
+				<div class="heading text-center">
+					<h3>{{ .Site.Params.foundation.subtitle }}</h3>
+				</div>
+				{{ end }}
             </div>
         </div>
 		<div class="row flexbox{{ if .Site.Params.foundation.center }} flexbox-center{{ end }}">
