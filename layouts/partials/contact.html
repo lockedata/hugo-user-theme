@@ -1,12 +1,16 @@
+{{ "<!-- Contact Section -->" | safeHTML }}
 <div class="container" id="contact">
 
 	<div class="row">
 		<div class="col-md-8">
 
-			<section>
-
+			<section id="contact">
+				{{ "<!-- Contact Markdown -->" | safeHTML }}
+				
 				{{ .Content }}
-
+				
+				{{ "<!-- Contact Form -->" | safeHTML }}
+				
 				{{ if isset .Site.Params "email" }}
 
 				<div class="heading">
