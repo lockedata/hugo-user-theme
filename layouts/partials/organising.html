@@ -4,11 +4,15 @@
 	{{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">{{ with .Site.Params.organising.title }}{{ . | markdownify }}{{ end }}</h2>
-				<h3 class="section-subheading text-mutedwith ">{{ with .Site.Params.organising.subtitle }}{{ . | markdownify }}{{ end }}</h3>
-			</div>
-		</div>
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.organising.title }}</h2>
+                </div>
+                <div class="heading text-center">
+                    <h3>{{ .Site.Params.organising.subtitle }}</h3>
+                </div>
+            </div>
+        </div>
 		<div class="row flexbox{{ if .Site.Params.organising.center }} flexbox-center{{ end }}">
 			{{ range .Site.Params.organising.members }}
 			<div class="col-sm-2 col">
