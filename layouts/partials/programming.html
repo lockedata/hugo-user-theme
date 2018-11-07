@@ -1,5 +1,7 @@
 {{ "<!-- Programming Section -->" | safeHTML }}
-<section id="programming" class={{ if .Site.Params.programming.bg}} "bar background-gray no-mb" {{ else }} "bar background-white no-mb" {{ end }}>
+<section id="programming" class={{ if .Site.Params.programming.bg }} "bar background-gray no-mb"
+	{{ else if .Site.Params.programming.pattern }} "bar background-pentagon no-mb" 
+	{{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">

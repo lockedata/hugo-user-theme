@@ -1,6 +1,15 @@
 {{ "<!-- Twitter Section -->" | safeHTML }}
-<section id="twitter" class={{ if .Site.Params.twitter.bg}} "bar background-gray no-mb" {{ else }} "bar background-white no-mb" {{ end }}>
+<section id="twitter" class={{ if .Site.Params.twitter.bg }} "bar background-gray no-mb"
+	{{ else if .Site.Params.twitter.pattern }} "bar background-pentagon no-mb" 
+	{{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="heading text-center">
+					<h2>{{ .Site.Params.twitter.title }}</h2>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-12">
 				<a class="twitter-timeline" data-height="800" data-theme="light" href="{{ .Site.Params.twitter.feed_url }}"></a>
