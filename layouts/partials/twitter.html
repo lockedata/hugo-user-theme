@@ -1,5 +1,5 @@
 {{ "<!-- Twitter Section -->" | safeHTML }}
-<section id="twitter" class="bar background-gray no-mb">
+<section id="twitter" class={{ if .Site.Params.twitter.bg}} "bar background-gray no-mb" {{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">

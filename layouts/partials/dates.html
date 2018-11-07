@@ -1,5 +1,5 @@
 {{ "<!-- Dates Section -->" | safeHTML }}
-<section id="dates">
+<section id="dates" class={{ if .Site.Params.dates.bg}} "bar background-gray no-mb" {{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">

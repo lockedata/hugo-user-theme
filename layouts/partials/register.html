@@ -1,6 +1,7 @@
 <div class="container" id="register">
 
 	{{ if .Site.Params.participation.tickets_enable }}
+	{{ "<!-- /register.tickets -->" | safeHTML }}
 	<div class="row">
 		<div class="col-md-12">
 			<section>
@@ -10,10 +11,10 @@
 			</section>
 		</div>
 	</div>
-	<!-- /.tickets -->
 	{{ end }}
 
 	{{ if .Site.Params.participation.cfp_enable }}
+	{{ "<!-- /register.call for papers -->" | safeHTML }}
 	<div class="row">
 		<div class="col-md-12">
 			<section>
@@ -23,7 +24,6 @@
 			</section>
 		</div>
 	</div>
-	<!-- /.call for papers -->
 	{{ end }}
 
 	{{ .Content }}

@@ -1,7 +1,7 @@
 {{ if isset .Site.Params "sponsors" }}
 {{ if .Site.Params.sponsors.enable }}
 {{ if gt (len .Site.Data.sponsors) 0 }}
-<section class="bar background-gray no-mb">
+<section id="sponsors" class={{ if .Site.Params.sponsors.bg}} "bar background-gray no-mb" {{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -21,7 +21,7 @@
 							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
 						</a>
 						{{ else }}
-						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
 						{{ end }}
 					</li>
 					{{ end }}
