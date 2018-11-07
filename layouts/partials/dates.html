@@ -1,6 +1,8 @@
 {{ "<!-- Dates Section -->" | safeHTML }}
 <section id="dates" class={{ if .Site.Params.dates.bg }} "bar background-gray no-mb"
     {{ else if .Site.Params.dates.pattern }} "bar background-pentagon no-mb" 
+	{{ else if .Site.Params.dates.photo1 }} "bar background-image-fixed-1" 
+	{{ else if .Site.Params.dates.photo2 }} "bar background-image-fixed-2" 
     {{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
         <div class="row">

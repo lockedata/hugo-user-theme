@@ -1,6 +1,8 @@
 {{ "<!-- Organising Section -->" | safeHTML }}
 <section id="organising" class={{ if .Site.Params.organising.bg }} "bar background-gray no-mb"
 	{{ else if .Site.Params.organising.pattern }} "bar background-pentagon no-mb" 
+	{{ else if .Site.Params.organising.photo1 }} "bar background-image-fixed-1" 
+	{{ else if .Site.Params.organising.photo2 }} "bar background-image-fixed-2" 
 	{{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">

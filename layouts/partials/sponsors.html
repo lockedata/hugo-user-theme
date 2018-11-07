@@ -4,6 +4,8 @@
 {{ if gt (len .Site.Data.sponsors) 0 }}
 <section id="sponsors" class={{ if .Site.Params.sponsors.bg }} "bar background-gray no-mb"
 	{{ else if .Site.Params.sponsors.pattern }} "bar background-pentagon no-mb" 
+	{{ else if .Site.Params.sponsors.photo1 }} "bar background-image-fixed-1" 
+	{{ else if .Site.Params.sponsors.photo2 }} "bar background-image-fixed-2" 
 	{{ else }} "bar background-white no-mb" {{ end }}>
 	<div class="container">
 		<div class="row">
