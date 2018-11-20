@@ -14,11 +14,13 @@
 
 		<div class="col-md-4 col-sm-6">
 
-			<div class="social visible-lg">
+			<div class="social">
 				{{ range .Site.Menus.topbar.ByWeight }}
 				<a href="{{ .URL }}" target="_blank" style="opacity: 1;">{{ .Pre }}</a>
 				{{ end }}
 			</div>
+
+			<hr class="hidden-md hidden-lg">
 
 		</div>
 		<!-- /.socials -->
