@@ -23,32 +23,27 @@
 			</div>
 			<div class="col-md-12">
 
-				<p class="lead">
+				<h2>
 					{{ .Site.Params.sponsors.tier1 }}
-				</p>
+				</h2>
 
-				<ul class="owl-carousel customers">
+				
 					{{ range .Site.Data.sponsors.tier1 }}
-					<li class="item" title="{{ .name }}">
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="100%"/>
 						</a>
 						{{ else }}
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="100%"/>
 						{{ end }}
-					</li>
 					{{ end }}
-				</ul>
-				<!-- /.owl-carousel1 -->
 
-				<p class="lead">
-					{{ .Site.Params.sponsors.tier2 }}
-				</p>
+					<h2>
+						{{ .Site.Params.sponsors.tier2 }}
+					</h2>
 
-				<ul class="owl-carousel customers">
+				
 					{{ range .Site.Data.sponsors.tier2 }}
-					<li class="item" title="{{ .name }}">
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
 							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
@@ -56,18 +51,13 @@
 						{{ else }}
 						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
 						{{ end }}
-					</li>
 					{{ end }}
-				</ul>
-				<!-- /.owl-carousel2 -->
 
-				<p class="lead">
-					{{ .Site.Params.sponsors.tier3 }}
-				</p>
+					<h2>
+						{{ .Site.Params.sponsors.tier3 }}
+					</h2>
 
-				<ul class="owl-carousel customers">
-					{{ range .Site.Data.sponsors.tier3 }}
-					<li class="item" title="{{ .name }}">
+				{{ range .Site.Data.sponsors.tier3 }}
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
 							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
@@ -75,10 +65,7 @@
 						{{ else }}
 						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
 						{{ end }}
-					</li>
 					{{ end }}
-				</ul>
-				<!-- /.owl-carousel3 -->
 
 			</div>
 		</div>
