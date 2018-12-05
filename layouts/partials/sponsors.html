@@ -31,10 +31,10 @@
 					{{ range .Site.Data.sponsors.tier1 }}
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="100%"/>
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}"/>
 						</a>
 						{{ else }}
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="100%"/>
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}" />
 						{{ end }}
 					{{ end }}
 
@@ -46,10 +46,10 @@
 					{{ range .Site.Data.sponsors.tier2 }}
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}" />
 						</a>
 						{{ else }}
-						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="80%" />
+						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}" />
 						{{ end }}
 					{{ end }}
 
@@ -60,10 +60,10 @@
 				{{ range .Site.Data.sponsors.tier3 }}
 						{{ if .url }}
 						<a href="{{ .url }}" target="_blank">
-							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
+							<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}" />
 						</a>
 						{{ else }}
-						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="60%" />
+						<img src="{{ .image }}" alt="{{ .name }}" class="img-responsive" width="{{ .scale }}" />
 						{{ end }}
 					{{ end }}
 
