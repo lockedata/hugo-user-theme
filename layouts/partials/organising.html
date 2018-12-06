@@ -21,7 +21,7 @@
         </div>
 		<div class="row flexbox{{ if .Site.Params.organising.center }} flexbox-center{{ end }}">
 			{{ range .Site.Params.organising.members }}
-			<div class="col-sm-2 col">
+			<div class="col-sm-4 col-md-3 col-lg-2">
 				<div class="team-member">
 					{{ $url := printf "img/organising/%s" .img }}
 					<img src="{{ $url | absURL }}" class="img-responsive img-circle" alt="{{ .name }}">
