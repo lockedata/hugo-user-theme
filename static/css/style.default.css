@@ -3550,3 +3550,235 @@ a.list-group-item.active > .badge,
 .reg-button {
   text-align: center;
 }
+
+header {
+  background-image: url(../img/header-bg.jpg);
+}
+
+header .intro-text .intro-heading {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Static pages */
+
+staticheader {
+  text-align: center;
+  color: #2165B6;
+}
+
+staticheader .intro-text {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+staticheader .intro-text .intro-lead-in {
+  margin-bottom: 25px;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 22px;
+}
+
+staticheader .intro-text .intro-heading {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+staticheader .intro-text {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+
+staticheader .intro-text .intro-heading {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 75px;
+}
+
+static .staticbody {
+  padding: 0 50px 0 50px;
+}
+
+
+/* Widths and paddings */
+
+@media(min-width: 768px) {
+  header .intro-text {
+      padding-top: 100px;
+      padding-bottom: 200px;
+  }
+}
+
+header .intro-text .intro-heading {
+  text-transform: none;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #2165B6;
+  background-position: bottom right;
+}
+
+header .intro-text .intro-lead-in {
+  font-size: 3.2rem;
+  font-style: normal;
+  text-align: left;
+}
+
+header .intro-text {
+  text-align: left;
+  z-index: 10;
+  position: relative;
+}
+
+header .intro-text .intro-heading {
+  text-transform: none;
+  font-size: 5rem;
+  line-height: 1.2;
+  text-align: left;
+  z-index: 10;
+  position: relative;
+}
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;   
+}
+
+@media(max-width: 1024px) {
+  header {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #2165B6;
+      background-position: bottom right;
+  }
+
+  header .intro-text .intro-lead-in {
+      font-size: 3.2rem;
+      font-style: normal;
+      text-align: left;
+  }
+  header .intro-text {
+      text-align: left;
+  }
+  header .intro-text .intro-heading {
+      text-transform: none;
+      font-size: 5rem;
+      line-height: 1.2;
+      text-align: left;
+  }
+}
+
+@media(max-width: 500px) {
+  header {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #2165B6;
+      background-position: bottom right;
+      padding-bottom: 8rem;
+  }
+  header .intro-text .intro-lead-in {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+  }
+  header .intro-text .intro-heading {
+      font-size: 2.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+  }
+  header .intro-text a .btn {
+      padding: 15px 50px;
+  }
+}
+
+canvas {
+  position:absolute;
+  top:0;
+  left:0;   
+}
+
+@media(max-width: 1024px) {
+  header {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #2165B6;
+      background-position: bottom right;
+  }
+
+  header .intro-text .intro-lead-in {
+      font-size: 3.2rem;
+      font-style: normal;
+      text-align: left;
+  }
+  header .intro-text {
+      text-align: left;
+  }
+  header .intro-text .intro-heading {
+      text-transform: none;
+      font-size: 5rem;
+      line-height: 1.2;
+      text-align: left;
+  }
+}
+
+@media(max-width: 500px) {
+  header {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #2165B6;
+      background-position: bottom right;
+      padding-bottom: 8rem;
+  }
+  header .intro-text .intro-lead-in {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+  }
+  header .intro-text .intro-heading {
+      font-size: 2.2rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+  }
+  header .intro-text a .btn {
+      padding: 15px 50px;
+  }
+}
+/* General button style (reset) */
+
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: #2165B6;
+  background: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 0px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
