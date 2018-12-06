@@ -6,13 +6,12 @@
 <body>
 
 	<div id="all">
-		{{ partial "hero.html" . }}
-{{ partial "top.html" . }}
 
-{{ partial "nav.html" . }}
-
-
-		
+		<header>
+			{{ partial "top.html" . }}
+			{{ partial "nav.html" . }}
+			{{ partial "hero.html" . }}
+		</header>
 
 		{{ if .Site.Params.carousel.enable }}
 		{{ partial "carousel.html" . }}
