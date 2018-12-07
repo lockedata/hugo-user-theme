@@ -8,55 +8,53 @@
 	<div id="all">
 
 		<header>
-
 			{{ partial "top.html" . }}
-
 			{{ partial "nav.html" . }}
-
+			{{ partial "hero.html" . }}
 		</header>
 
 		{{ if .Site.Params.carousel.enable }}
-			{{ partial "carousel.html" . }}
+		{{ partial "carousel.html" . }}
 		{{ end }}
-		
+
 		{{ if .Site.Params.about.enable }}
-			{{ partial "about.html" . }}
+		{{ partial "about.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.features.enable }}
-			{{ partial "features.html" . }}
+		{{ partial "features.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.dates.enable }}
-			{{ partial "dates.html" . }}
+		{{ partial "dates.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.testimonials.enable }}
-			{{ partial "testimonials.html" . }}
+		{{ partial "testimonials.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.twitter.enable }}
-			{{ partial "twitter.html" . }}
+		{{ partial "twitter.html" . }}
 		{{ end}}
 
 		{{ if .Site.Params.organising.enable }}
-			{{ partial "organising.html" . }}
+		{{ partial "organising.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.programming.enable }}
-			{{ partial "programming.html" . }}
+		{{ partial "programming.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.see_more.enable }}
-			{{ partial "see_more.html" . }}
+		{{ partial "see_more.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.recent_posts.enable }}
-			{{ partial "recent_posts.html" . }}
+		{{ partial "recent_posts.html" . }}
 		{{ end }}
 
 		{{ if .Site.Params.sponsors.enable }}
-			{{ partial "sponsors.html" . }}
+		{{ partial "sponsors.html" . }}
 		{{ end }}
 
 		{{ partial "footer.html" . }}
