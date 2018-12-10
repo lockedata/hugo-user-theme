@@ -3760,6 +3760,6 @@ canvas {
   position: relative;
 }
 
-h1, .h1, header, .intro-text, .intro-heading, .intro-lead-in, .heading{
+.intro-text, .intro-heading, .intro-lead-in, .heading{
   color: whitesmoke !important;
 }
