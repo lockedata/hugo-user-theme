@@ -5,7 +5,7 @@
     <div class="intro-text">
       <div class="intro-lead-in heading"><h1>{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h1></div>
       <div class="intro-heading heading"><h1>{{ with .Site.Params.hero.subtitle }}{{ . | markdownify }}{{ end }}</h1></div>
-      <a href="#services" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>
+      <a href="{{ .Site.Params.participation.tickets_link }}" class="page-scroll btn btn-xl">{{ with .Site.Params.hero.buttonText }}{{ . }}{{ end }}</a>
     </div>
   </div>
 </header>
