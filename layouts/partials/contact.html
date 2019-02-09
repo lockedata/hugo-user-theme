@@ -11,15 +11,11 @@
 				
 				{{ "<!-- Contact Form -->" | safeHTML }}
 				
-				{{ if isset .Site.Params "email" }}
-
 				<div class="heading">
 					<h3>{{ i18n "contactForm" }}</h3>
 				</div>
 
-				<div id="contact-message"></div>
-
-				<form class="contact-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+				<form class="contact-form" method="post" data-netlify="true" name="contact" action="/contact-success">
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
@@ -35,10 +31,25 @@
 						</div>
 						<div class="col-sm-12">
 							<div class="form-group">
+								<label for="subject">{{ i18n "contactSubject" }}</label>
+								<select name="subject" class="form-control">
+									{{ range .Site.Params.contact.subject }}
+									<option>{{ . }}</option>
+									{{ end }}
+								</select>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="form-group">
 								<label for="message">{{ i18n "contactMessage" }}</label>
 								<textarea id="message" class="form-control" name="message" required></textarea>
 							</div>
 						</div>
+						{{ if .Site.Params.contact.recaptcha }}
+						<div class="col-sm-12">
+							<div data-netlify-recaptcha="true"></div>
+						</div>
+						{{ end }}
 
 						<div class="col-sm-12 text-center">
 							<button type="submit" class="btn btn-template-main"><i class="fa fa-envelope-o"></i>{{ i18n "contactSend" }}</button>
@@ -47,8 +58,6 @@
 					</div>
 					<!-- /.row -->
 				</form>
-
-				{{ end }}
 
 			</section>
 
