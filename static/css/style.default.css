@@ -3551,8 +3551,12 @@ a.list-group-item.active > .badge,
   text-align: center;
 }
 
-header {
+header#hero {
   background-image: url(../img/header-bg.jpg);
+}
+
+header#hero .overlay {
+  background: rgba(33,101,182,.7)
 }
 
 header .intro-text .intro-heading {
