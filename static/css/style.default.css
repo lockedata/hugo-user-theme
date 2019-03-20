@@ -3765,3 +3765,11 @@ canvas {
 .intro-text, .intro-heading, .intro-lead-in, .heading{
   color: whitesmoke !important;
 }
+
+html, body { 
+  height: 100%;
+}
+
+#all {
+  min-height: 100%;
+}
