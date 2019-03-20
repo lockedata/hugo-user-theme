@@ -3627,7 +3627,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #2165B6;
-  background-position: bottom right;
+  background-position: center;
 }
 
 header .intro-text .intro-lead-in {
@@ -3659,10 +3659,10 @@ canvas {
 
 @media(max-width: 1024px) {
   header {
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: #2165B6;
-      background-position: bottom right;
+      background-position: center;
   }
 
   header .intro-text .intro-lead-in {
@@ -3683,11 +3683,10 @@ canvas {
 
 @media(max-width: 500px) {
   header {
-      background-size: contain;
+      background-size: cover;
       background-repeat: no-repeat;
       background-color: #2165B6;
-      background-position: bottom right;
-      padding-bottom: 8rem;
+      background-position: center;
   }
   header .intro-text .intro-lead-in {
       font-size: 1.6rem;
