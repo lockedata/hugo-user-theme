@@ -3778,3 +3778,7 @@ html, body {
 #footer {
   margin-top: -281px;
 }
+
+.social-buttons > li {
+  padding: 0;
+}
